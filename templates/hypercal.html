@@ -1,18 +1,16 @@
 <html>
-<head><title>%%%title%%% - %%%month_text%%%, %%%year%%%</title></head>
+<head><title>%%%month_text%%%, %%%year%%%</title></head>
 
 <body  %%%bgcolor%%%  %%%background%%%
        %%%text%%% %%%link%%% 
 	   %%%vlink%%% %%%alink%%%
 	   >
 
-<h2>%%%title%%%</h2>
-
 <table>
 <tr>
 <td>
 
-<table border>
+<table border="1" cellpadding="6" cellspacing="1" bgcolor="#FFFFFF">
 <tr>
 <td colspan=7 align=center>
 <h3>%%%month_text%%%, %%%year%%%</h3>
@@ -20,13 +18,13 @@
 </td></tr>
 
 <tr>
-<th>Sun</th>
-<th>Mon</th>
-<th>Tue</th>
-<th>Wed</th>
-<th>Thu</th>
-<th>Fri</th>
-<th>Sat</th>
+<th width="14%" bgcolor="darkblue"><font color="white"><b>Sun</b></font></th>
+<th width="14%" bgcolor="darkblue"><font color="white"><b>Mon</b></font></th>
+<th width="14%" bgcolor="darkblue"><font color="white"><b>Tue</b></font></th>
+<th width="14%" bgcolor="darkblue"><font color="white"><b>Wed</b></font></th>
+<th width="14%" bgcolor="darkblue"><font color="white"><b>Thu</b></font></th>
+<th width="14%" bgcolor="darkblue"><font color="white"><b>Fri</b></font></th>
+<th width="14%" bgcolor="darkblue"><font color="white"><b>Sat</b></font></th>
 </tr>
 
 
@@ -37,7 +35,12 @@
 </table>
 
 </td><td>
-<br>
+<center>
+[
+<a href="%%%month_view%%%">Month's events at a glance</a> |
+<a href="%%%add_event%%%">Add an event</a> ]
+</center><br>
+
 <center>Go to:</center><br>
 <center>[ <a href="%%%prev_month%%%">  Previous month  </a>|
 <a href="%%%next_month%%%">  Next month  </a>|
@@ -48,17 +51,17 @@
 
 <center>
 
-[ %%%edit_announcements%%%  ]
+[ %%%edit_announcements%%% ]
 
 </center>
 </td></tr></table>
  
  <center>
  
- <hr>[ <a href="http://www.rcbowen.com/perl/HyperCal/">
+ <hr>[ <a href="http://www.rcbowen.com/products/HyperCal/">
  About HyperCal</a> |
   <a href="http://www.rcbowen.com/">RCBowen.com</a> |
-  <a href="http://www.rcbowen.com/perl/">Other fine CGI applications</a> ]
+  <a href="http://www.rcbowen.com/products/">Other fine CGI applications</a> ]
   
 </center><br>
 HyperCal, Version %%%version%%%, Copyright &copy; 1996,1997, Richard Bowen.

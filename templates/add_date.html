@@ -6,10 +6,14 @@
 	   %%%vlink%%% %%%alink%%%
 	   >
 
-<h2>Add an appointment for %%%month_text%%% %%%day%%%,
- %%%year%%%.</h2>
+<h3>Add an appointment for %%%month_text%%% %%%day%%%,
+ %%%year%%%.</h3>
 
 <form method=post action="%%%base_url%%%%%%add_date%%%">
+<b>Date:</b> <select name=month>%%%months%%%</select>
+			 <select name=day>%%%days%%%</select>
+			 <input name=year size=5 value=%%%year%%%>
+<br>
 <b>Time:</b>
 <input name="month" value="%%%month%%%" type=hidden>
 <input name="year" value="%%%year%%%" type=hidden>
@@ -24,14 +28,9 @@
 <input name="hour_done" size=2 value="00"><b>: </b><input name="min_done" value="00" size=2>
 <input type=radio name="ampm_done" value="am" CHECKED>AM
 <input type=radio name="ampm_done" value="pm">PM
-<p>
-
-<i>If no beginning time is specified, the event will
- be listed as the whole day.  If no end time is entered,
- the event will be listed with only the beginning time</i>
-<p>
+<br>
 <input type=checkbox name="annual"> Annual event?
-<p>
+<br>
 
 <b>Description</b><br>
 <textarea name="desc" rows=5 cols=60 wrap=virtual></textarea><br>
