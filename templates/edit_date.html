@@ -1,0 +1,44 @@
+<html>
+<head><title>Edit event</title></head>
+
+<body  %%%bgcolor%%%  %%%background%%%
+       %%%text%%% %%%link%%% 
+	   %%%vlink%%% %%%alink%%%
+	   >
+
+<h2>Edit event</h2>
+
+<form method=post action="%%%base_url%%%%%%edit_date%%%">
+<b>Time:</b>
+<input name="month" value="%%%month%%%" type=hidden>
+<input name="year" value="%%%year%%%" type=hidden>
+<input name="day" value="%%%day%%%" type=hidden>
+<input name="id" value="%%%id%%%" type=hidden>
+<input name="routine" value="edit_event" type=hidden>
+
+<input name="hour" size=2 value="%%%hour%%%"><b>: </b>
+<input name="min" value="%%%min%%%" size=2>
+<input type=radio name="ampm" value="am" %%%am%%%>AM
+<input type=radio name="ampm" value="pm" %%%pm%%%>PM
+<br>
+<b>Until:</b>
+<input name="hour_done" size=2 value="%%%endhour%%%"><b>: </b>
+<input name="min_done" value="%%%endmin%%%" size=2>
+<input type=radio name="ampm_done" value="am" %%%endam%%%>AM
+<input type=radio name="ampm_done" value="pm" %%%endpm%%%>PM
+<p>
+
+<i>If no beginning time is specified, the event will
+ be listed as the whole day.  If no end time is entered,
+ the event will be listed with only the beginning time</i>
+<p>
+<input type=checkbox name="annual" %%%annual%%%> Annual event?
+<p>
+
+<b>Description</b><br>
+<textarea name="desc" rows=5 
+cols=60 wrap=virtual>%%%description%%%</textarea><br>
+
+<input type=submit value="Edit Event Details">
+</form><hr>
+Calendar entries will expire and be deleted %%%old%%% days after the event.

@@ -1,0 +1,19 @@
+<html>
+<head><title>Delete announcements for %%%month_text%%%, %%%year%%%</title></head>
+
+<body  %%%bgcolor%%%  %%%background%%%
+       %%%text%%% %%%link%%% 
+	   %%%vlink%%% %%%alink%%%
+	   >
+
+<h3>Delete an announcement for %%%month_text%%% %%%year%%%</h3>
+
+<form method=POST action="%%%url%%%">
+<input type=hidden name="month" value="%%%month%%%">
+<input type=hidden name="year" value="%%%year%%%">
+<input type=hidden name="routine" value="del">
+
+%%%announce%%%
+
+<input type=submit value="Delete announcement(s)">
+</form>
